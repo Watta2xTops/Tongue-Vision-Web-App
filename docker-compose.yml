@@ -1,0 +1,17 @@
+# For Railway deployment - keep only the backend in Docker
+services:
+  resnet-backend:
+    build: ./code/teethanalyzer-backend
+    ports:
+      - "8000:8000"
+    container_name: resnet-backend
+    volumes:
+      - ./code/teethanalyzer-backend:/app
+    working_dir: /app
+    command: "uvicorn backend_api:app --host 0.0.0.0 --port 8000"
+    environment:
+      # Railway will inject these automatically
+      - PORT=8000
+    tty: true
+
+# Note: Frontend will be deployed separately from source code on Railway
