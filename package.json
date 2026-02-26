@@ -1,11 +1,14 @@
 {
   "dependencies": {
     "@apollo/client": "^3.13.8",
+    "clsx": "^2.1.1",
     "graphql": "^16.11.0",
     "lucide-react": "^0.545.0",
     "webpack-dev-middleware": "^7.4.2"
   },
   "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
     "@types/webpack-dev-middleware": "^5.0.2"
   }
 }
