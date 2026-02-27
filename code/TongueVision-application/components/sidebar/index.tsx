@@ -23,14 +23,15 @@ const Sidebar = (): JSX.Element => {
                 <HomeIcon isActive={pathname === "/"} />
                 <br />
                 <ScanIcon isActive={pathname === "/scan"} /> 
-                <br />
-                <TipsIcon isActive={pathname === "/recommended"} />
-                <br />
+                
+                {/*<br />
+                <TipsIcon isActive={pathname === "/recommended"} />*
+                <br />/}
                 {/* <DentistIcon isActive={pathname === "/ChatPagePatient"} />
                 <br /> */}
                 {/* <ChatbotIcon isActive={pathname === "/chatbot"} /> */}
-                <br />
-                <GoalsIcon isActive={pathname === "/calendar"} />
+                {/*<br />
+                <GoalsIcon isActive={pathname === "/calendar"} />*/}
                 <SettingsIcon isActive={pathname === "/login"} />
             </div>
         </aside>

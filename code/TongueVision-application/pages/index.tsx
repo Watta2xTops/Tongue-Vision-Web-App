@@ -9,13 +9,21 @@ import HomeCard5 from "@/components/HomePage/cards/HomeCard5";
 
 const HomePage = () => {
   const userName = "User";
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-3 auto-rows-[30px]">
+
+      {/* Modified to only use HomeCard1 */}
+      <HomeCard1 className="md:col-span-15 md:row-span-15" metric={90} />
+
+      {/*
       <HomeCard1 className="md:col-span-9 md:row-span-10" metric={90}/>
       <HomeCard2 className="md:col-span-3 md:row-span-10" />
       <HomeCard3 className="md:col-span-6 md:row-span-8" />
       <HomeCard4 className="md:col-span-3 md:row-span-8" />
       <HomeCard5 className="md:col-span-3 md:row-span-8" />
+      */}
+
     </div>
   );
 };

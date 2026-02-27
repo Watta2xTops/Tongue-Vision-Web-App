@@ -85,7 +85,7 @@ const HomeCard1 = ({ className = "", metric = 100 }: { className?: string; metri
       {!showHistory ? (
         <>
           <h2 className="text-2xl font-semibold text-white mb-2">Welcome {name}!</h2>
-          <h2 className="text-lg font-semibold text-white mb-2">Teeth Health Overview</h2>
+          <h2 className="text-lg font-semibold text-white mb-2">Tongue Assessment Overview</h2>
 
           {/* Step 3: Wrap Image in filtered div */}
           <div className="flex justify-center mb-4 -mt-8">
@@ -101,7 +101,7 @@ const HomeCard1 = ({ className = "", metric = 100 }: { className?: string; metri
 
               {/* Semi-transparent card at the arrow tip */}
               <div className="absolute top-[40px] left-[389px] w-80 h-55 bg-white/20 backdrop-blur-md rounded-3xl p-4 shadow-inner text-white">
-                <p className="text-sm font-medium mb-2">Latest Teeth Status:</p>
+                <p className="text-sm font-medium mb-2">Latest Result:</p>
                 {scanRecords.length > 0 ? (
                   <>
                     <p className="text-sm mb-1">Date: {new Date(Number(scanRecords[scanRecords.length - 1]?.date)).toLocaleDateString("en-US", {
@@ -131,7 +131,7 @@ const HomeCard1 = ({ className = "", metric = 100 }: { className?: string; metri
             </div>
           </div> 
           <div className="w-80 h-55 bg-white/20 backdrop-blur-md rounded-3xl p-4 shadow-inner text-white mb-4 -mt-63">
-            <p className="text-base font-medium mb-2">Teeth Scan History</p>
+            <p className="text-base font-medium mb-2">Tongue Assesssment History</p>
             
             {scanRecords.length > 0 ? (
               <>
