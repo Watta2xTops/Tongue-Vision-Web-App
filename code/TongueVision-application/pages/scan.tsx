@@ -609,7 +609,7 @@ const ScanPage = () => {
 
   return (
     <>
-      <div className="h-[370px] bg-gradient-to-br from-[#4fa1f2] via-[#74b0f0] to-[#66acf4] 
+      <div className="h-[370px] bg-gradient-to-tr from-[#6a8ff7] via-[#7eb8f7] to-[#b2ede8] 
         backdrop-blur-md bg-opacity-30 rounded-3xl p-6 shadow-md hover:shadow-blue-300 
         transition-shadow duration-500 relative"
       >       
@@ -624,7 +624,7 @@ const ScanPage = () => {
           </div>
         )}
         <div className="flex justify-between">
-          <h2 className="text-2xl font-bold text-white">Ready to check your Teeth's Health?</h2>
+          <h2 className="text-2xl font-bold text-white">Ready to check your Tounge's Health?</h2>
           {/* Show loading state while generating LIME */}
           {generatingLime && (
             <div className="flex items-center gap-3 px-4 py-2 bg-blue-500/80 rounded-3xl">

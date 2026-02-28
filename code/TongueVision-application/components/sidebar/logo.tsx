@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "/public/assets/Dental Lens Logo.png";
+import logo from "/public/assets/Tonguevision-icon482.png";
 import { JSX } from "react";
 
 const Logo = (): JSX.Element => {
